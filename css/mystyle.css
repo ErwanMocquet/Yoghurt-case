@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Beginning of actual CSS */
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 900px;
+}
+
+/*  Theme style */
+
+.theme-page{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.theme-element-backgroundcolor{
+    background-color: #f7d8aa;
+}
+
+.headers{
+    font-weight: bold;
+}
+
+/* Page header and nav */
+.page-header{
+    margin: 15px 0;   
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_elements{
+    text-decoration: none;
+    color: #333333;
+}
+
+.navigation_elements:hover{
+    color: #e3af66;
+}
+
+/* Product image */
+
+.product-image{
+    max-width: 100%;
+}
+
+/* Offer text */
+
+.offer{
+    width: 80%;
+    height: 3.5rem;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 16px;
+}
+
+/* Ingredient part */
+
+.ingredients-section{
+    margin: 20px auto;
+    width: 80%;
+}
+
+.ingredients-heading{
+    margin-bottom: 5px;
+}
+
+.nutrition-table{
+    margin: 25px auto 40px;
+    width: 80%;
+    border: black 1px solid;
+}
+
+.nutrition-table-td{
+    text-align: right;
+}
+
+/* Quality and cards */
+
+.quality-section{
+    margin: 20px auto;
+    width: 80%;
+}
+
+.quality-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quality-heading{
+    margin-bottom: 5px;
+}
+
+.card{
+    border: 1px solid black;
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-bottom: 30px;
+}
+
+.card-heading{
+    margin-bottom: 5px;
+}
+
+.card-content{
+    padding: 16px 16px;
+}
+
+.card-top-blue{
+    height: 44px;
+    background-color: #3354a5;
+}
+
+.card-top-brown{
+    height: 44px;
+    background-color: #e3af66;
+}
+
+.card-top-grey{
+    height: 44px;
+    background-color: #ececec;
+}
+
+.card-top-lightbrown{
+    height: 44px;
+    background-color: #f7d8aa;
+}
+
+/* Footer */
+
+.some-images{
+    width: 32px;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+.page-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15.625rem;
+}
+
+.page-footer-adress{
+    margin-top: 5px;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 37.5rem) {
+    .page-footer{
+        flex-direction:row;
+        height: 12.5rem;
+    }
+
+    .page-footer.section{
+        height: 8.75rem;
+    }
+
+    .quality-flexbox{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .offer{
+        font-size: 1.7rem;
+        padding-top: 13px;
+    }
+}
+
+@media only screen and (min-width: 53.438rem) {
+    .ingredients-section,
+    .quality-section {
+        width: 50%;
+    }
+
+    .navigation{
+        justify-content: flex-end;
+    }
+
+    .navigation_elements{
+        margin-left: 15px;
+    }
+
+    .quality-flexbox{
+        justify-content: space-between;
+    }
+}
